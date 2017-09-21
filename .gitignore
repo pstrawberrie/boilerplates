@@ -71,9 +71,9 @@ yarn.lock
 ################################
 # Boilerplate-specific
 ################################
-gulp-fe-light/scripts/app.min.js
-gulp-fe-light/styles/styles.min.css
-webpack-express/_dist
+node-stacks/gulp-fe-light/scripts/app.min.js
+node-stacks/gulp-fe-light/styles/styles.min.css
+node-stacks/webpack-express/_dist
 
 ################################
 # Important
