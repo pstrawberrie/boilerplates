@@ -1,0 +1,295 @@
+/* Test a less compile */
+/* Controlled Styling */
+/* Mixins */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+main,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.shadow-off {
+  box-shadow: none !important;
+}
+.shadow-1 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.shadow-2 {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.shadow-3 {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.shadow-4 {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.no-select {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.pad-05 {
+  padding: .5rem;
+}
+.pad-1 {
+  padding: 1rem;
+}
+.pad-2 {
+  padding: 2rem;
+}
+.pad-3 {
+  padding: 3rem;
+}
+.pad-4 {
+  padding: 4rem;
+}
+.pad-5 {
+  padding: 5rem;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+/* Fonts */
+.font-bold {
+  font-family: 'Arial', sans-serif;
+  font-weight: 900;
+}
+.font-default {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+}
+html {
+  font-size: 100%;
+  line-height: 1.3;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 900;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+h5 {
+  font-size: 1.3rem;
+}
+h3,
+h4,
+h5 {
+  margin-bottom: 1rem;
+}
+p {
+  margin-bottom: 1.5rem;
+}
+/* Structure */
+/* Navigation */
+/* Footer */
+/* Default Theme */
+.bg-white {
+  background: #fff;
+  color: #000;
+}
+.bg-black {
+  background: #000;
+  color: #fff;
+}
+.text-white {
+  color: #fff;
+}
+.text-black {
+  color: #000;
+}
+body.theme-default {
+  background: #fff;
+  color: #000;
+}

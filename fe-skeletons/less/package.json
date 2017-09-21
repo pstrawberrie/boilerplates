@@ -1,0 +1,16 @@
+{
+  "name": "less",
+  "version": "1.0.0",
+  "description": "LESS styling boilerplates",
+  "main": "index.js",
+  "repository": "https://github.com/pstrawberrie/boilerplates",
+  "author": "pstrawberrie",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2"
+  },
+  "scripts": {
+    "start": "gulp --colors"
+  }
+}

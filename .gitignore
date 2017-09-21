@@ -57,3 +57,28 @@ typings/
 # dotenv environment variables file
 .env
 
+################################
+# Locks
+################################
+package-lock.json
+yarn.lock
+
+################################
+# Photoshop
+################################
+*.psd
+
+################################
+# Boilerplate-specific
+################################
+gulp-fe-light/scripts/app.min.js
+gulp-fe-light/styles/styles.min.css
+webpack-express/_dist
+
+################################
+# Important
+################################
+.h8ers
+.wankers
+.bridge-trolls
+#.park-bench-trolls
