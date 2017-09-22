@@ -22,36 +22,28 @@
 }
 
 // Paddings
-// @TODO: Make this into a loop, name shorter
-.pad-05 {padding:.5rem;}
-.pad-1 {padding:1rem;}
-.pad-15 {padding:1.5rem;}
-.pad-2 {padding:2rem;}
-.pad-25 {padding:2.5rem;}
-.pad-3 {padding:3rem;}
-.pad-35 {padding:3.5rem;}
-.pad-4 {padding:4rem;}
-.pad-45 {padding:4.5rem;}
-.pad-5 {padding:5rem;}
-.pad-55 {padding:5.5rem;}
-.pad-6 {padding:6rem;}
-.pad-65 {padding:6.5rem;}
+// .pad-#, .p{direction}-#
+.generate-padding(10);
+.generate-padding(@i: 0) when (@i > -1) {
+  .p-@{i} { padding: (1rem * @i); }
+	.pt-@{i} { padding-top: (1rem * @i); }
+	.pr-@{i} { padding-right: (1rem * @i); }
+	.pb-@{i} { padding-bottom: (1rem * @i); }
+	.pl-@{i} { padding-left: (1rem * @i); }
+  .generate-padding(@i - 1);
+}
 
 // Margins
-// @TODO: Make this into a loop, name shorter
-.margin-bot-05 {margin-bottom:.5rem;}
-.margin-bot-1 {margin-bottom:1rem;}
-.margin-bot-15 {margin-bottom:1.5rem;}
-.margin-bot-2 {margin-bottom:2rem;}
-.margin-bot-25 {margin-bottom:2.5rem;}
-.margin-bot-3 {margin-bottom:3rem;}
-.margin-bot-35 {margin-bottom:3.5rem;}
-.margin-bot-4 {margin-bottom:4rem;}
-.margin-bot-45 {margin-bottom:4.5rem;}
-.margin-bot-5 {margin-bottom:5rem;}
-.margin-bot-55 {margin-bottom:5.5rem;}
-.margin-bot-6 {margin-bottom:6rem;}
-.margin-bot-65 {margin-bottom:6.5rem;}
+// .m{direction}-#
+.generate-margin(10);
+.generate-margin(@i: 0) when (@i > -1) {
+	.m-@{i} { margin: (1rem * @i); }
+	.mt-@{i} { margin-top: (1rem * @i); }
+	.mr-@{i} { margin-right: (1rem * @i); }
+	.mb-@{i} { margin-bottom: (1rem * @i); }
+	.ml-@{i} { margin-left: (1rem * @i); }
+  .generate-margin(@i - 1);
+}
 
 // Display
 .inline {display:inline;}

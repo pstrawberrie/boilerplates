@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-    less = require('gulp-less');
+    less = require('gulp-less'),
+    size = require('gulp-size');
 
 // LESS
 gulp.task('less', function () {
@@ -7,6 +8,7 @@ gulp.task('less', function () {
     .pipe(less().on('error', function (err) {
       console.log(err);
     }))
+    .pipe(size())
     .pipe(gulp.dest('./'));
 });
 
