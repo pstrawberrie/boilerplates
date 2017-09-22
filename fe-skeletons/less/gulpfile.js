@@ -10,5 +10,9 @@ gulp.task('less', function () {
     .pipe(gulp.dest('./'));
 });
 
+gulp.task('watch', function () {
+  gulp.watch('./**/*.less', ['less']);
+});
 
-gulp.task('default', ['less']);
+
+gulp.task('default', ['less', 'watch']);

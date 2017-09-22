@@ -3,6 +3,7 @@
 // Color Variables
 @white: #fff;
 @black: #000;
+@gray: #ddd;
 
 // Color Utility: Backgrounds
 .bg-white { background:@white;color:@black; }
@@ -14,8 +15,17 @@
 
 // Theme Master
 body.theme-default {
-  .bg-white;
+  .bg-black;
 
-  // Theme me!
+  // Card Component
+  .card__footer {
+    border-color: @gray;
+  }
 
+}
+
+// Bonus ;]
+.dancing-banana {
+  background: transparent url('https://m.popkey.co/987552/NGLb3.gif') no-repeat center center;
+  .background-size(cover);
 }

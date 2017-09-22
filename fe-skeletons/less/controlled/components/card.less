@@ -1,0 +1,24 @@
+/* Card Component */
+
+// Base
+.card {
+  .flex-column;
+  .margin-bot-1;
+}
+
+// Shared
+.card, .card__header, .card__body,
+.card__footer {
+  .section;
+}
+
+.card__header, .card__footer, .card__body {
+  .flex-row;
+}
+
+// Specific
+.card__footer {
+  &.has-border {
+    border-top:1px solid transparent;
+  }
+}
