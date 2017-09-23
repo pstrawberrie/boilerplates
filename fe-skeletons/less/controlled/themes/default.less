@@ -5,9 +5,12 @@
 @black: #000;
 @gray: #ddd;
 
+@primary: #ff00ff;
+
 // Color Utility: Backgrounds
 .bg-white { background:@white;color:@black; }
 .bg-black { background:@black;color:@white; }
+.bg-gray { background:@gray;color:@black; }
 
 // Color Utility: Text
 .text-white { color:@white; }
@@ -16,6 +19,9 @@
 // Theme Master
 body.theme-default {
   .bg-black;
+
+  // Navigation Component
+  nav a:hover { border-color:@primary; }
 
   // Card Component
   .card__footer.has-border { border-color: @gray; }

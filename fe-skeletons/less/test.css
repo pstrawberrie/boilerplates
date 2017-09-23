@@ -334,6 +334,15 @@ img {
 .pl-0 {
   padding-left: 0rem;
 }
+.pr-05 {
+  padding-right: .5rem;
+}
+.pr-15 {
+  padding-right: 1.5rem;
+}
+.pl-15 {
+  padding-left: 1.5rem;
+}
 .m-10 {
   margin: 10rem;
 }
@@ -646,6 +655,82 @@ p {
   align-self: stretch;
 }
 /* Navigation */
+nav.navigation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  position: relative;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+nav .nav-left,
+nav .nav-right,
+nav .nav-hamburger {
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  position: relative;
+}
+nav .nav-right {
+  -webkit-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+nav .nav-logo {
+  margin-right: 1rem;
+  border-bottom: 0;
+}
+nav a {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  position: relative;
+  padding: 1rem;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+}
+nav a:hover {
+  -webkit-transition: 0.18s border-color ease-in-out;
+  -moz-transition: 0.18s border-color ease-in-out;
+  -o-transition: 0.18s border-color ease-in-out;
+  transition: 0.18s border-color ease-in-out;
+}
+nav .nav-hamburger {
+  display: none;
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+  border-bottom: 0;
+  position: relative;
+}
+@media all and (max-width: 900px) {
+  nav .nav-hamburger {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+  }
+  nav .nav-right a:not(.nav-hamburger) {
+    display: none;
+  }
+  nav .nav-left a:not(.nav-logo) {
+    display: none;
+  }
+}
 /* Footer */
 /* Card Component */
 .card {
@@ -775,6 +860,10 @@ p {
   background: #000;
   color: #fff;
 }
+.bg-gray {
+  background: #ddd;
+  color: #000;
+}
 .text-white {
   color: #fff;
 }
@@ -784,6 +873,9 @@ p {
 body.theme-default {
   background: #000;
   color: #fff;
+}
+body.theme-default nav a:hover {
+  border-color: #ff00ff;
 }
 body.theme-default .card__footer.has-border {
   border-color: #ddd;
