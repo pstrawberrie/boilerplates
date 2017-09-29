@@ -2,25 +2,29 @@
 
 // Color Variables
 @white: #fff;
-@black: #000;
+@dark: #222;
+@dark-lighter: #363636;
+
 @gray: #ddd;
 
-@primary: #ff00ff;
+@primary: #3cbae8;
 
 // Color Utility: Backgrounds
-.bg-white { background:@white;color:@black; }
-.bg-black { background:@black;color:@white; }
-.bg-gray { background:@gray;color:@black; }
+.bg-white { background:@white;color:@dark; }
+.bg-dark { background:@dark;color:@white; }
+.bg-gray { background:@gray;color:@dark; }
 
 // Color Utility: Text
 .text-white { color:@white; }
-.text-black { color:@black; }
+.text-black { color:@dark; }
 
 // Theme Master
 body.theme-default {
-  .bg-black;
+  .bg-dark;
 
   // Navigation Component
+  nav {background:@dark-lighter;}
+  nav a { color:@white; }
   nav a:hover { border-color:@primary; }
 
   // Card Component

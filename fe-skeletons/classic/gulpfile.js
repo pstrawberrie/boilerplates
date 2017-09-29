@@ -4,12 +4,12 @@ var gulp = require('gulp'),
 
 // LESS
 gulp.task('less', function () {
-  return gulp.src('./test.less')
+  return gulp.src('./styles/styles.less')
     .pipe(less().on('error', function (err) {
       console.log(err);
     }))
     .pipe(size())
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./styles'));
 });
 
 gulp.task('watch', function () {
